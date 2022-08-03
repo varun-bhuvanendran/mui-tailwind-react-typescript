@@ -71,7 +71,13 @@ function App() {
             <Typography variant="h6">{value}</Typography>
           </div>
           <div>
-            <code>&lt;Slider aria-label="MUI Slider" /&gt;</code>
+            <pre className="overflow-x-auto">
+              {`<Slider
+              aria-label="MUI Slider"
+              value={value}
+              onChange={handleChange}
+            />`}
+            </pre>
           </div>
         </div>
         {/* MUI + Tailwind */}
@@ -84,7 +90,6 @@ function App() {
               aria-label="MUI Tailwind Slider"
               value={value}
               onChange={handleChange}
-              className="text-tham"
               componentsProps={{
                 thumb: {
                   className: "bg-thames-orange",
@@ -105,12 +110,10 @@ function App() {
             <Typography variant="h6">{value}</Typography>
           </div>
           <div>
-            <pre className="overflow-x-scroll">
-              <code>
-                {`<Slider aria-label="MUI Tailwind Slider"
+            <pre className="overflow-x-auto">
+              {`<Slider aria-label="MUI Tailwind Slider"
               value={value}
               onChange={handleChange}
-              className="text-tham"
               componentsProps={{
                 thumb: {
                   className: "bg-thames-orange",
@@ -128,7 +131,6 @@ function App() {
                 },
               }}
             />`}
-              </code>
             </pre>
             <Typography variant="body2">
               The <span className="text-thames-orange">'thames-orange'</span> is
