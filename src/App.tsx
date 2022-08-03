@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Button from "@mui/material/Button"
-import { Slider, styled, Typography } from "@mui/material"
+import { Slider, Typography } from "@mui/material"
 import "./App.css"
 
 function App() {
