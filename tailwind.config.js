@@ -5,7 +5,11 @@ module.exports = {
     preflight: false,
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "thames-orange": "#F07D28",
+      }
+    },
   },
   plugins: [],
 }
